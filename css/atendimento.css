@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width:100%
+}
+body {
+    font-family:"Montserrat", sans-serif;
+    background-color: #212121;
+    color: white;
+  
+}
+
+
+.voltar{
+    font-family:"Montserrat", sans-serif;
+    padding: 80px 80px;
+    font-size: 28px;
+    color:  white;
+    text-decoration: none;
+}
+
+.quebra{
+    width: 850px;
+    justify-content: center;
+    display: center;
+    flex-wrap: wrap;
+}
+
+    .voltar a{
+        text-decoration: none;
+        font-family: "Montserrat", sans-serif;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+
+.central-atendimento {
+    text-align: center;
+    padding-top: 5px;
+        
+}
+
+
+    .central-atendimento h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .central-atendimento p {
+        margin-bottom: 10px;
+        font-size: 19px;
+        padding-bottom: 45px;
+    }
+
+.span{
+    color: #3FB950;
+    font-weight: bold;
+}
+
+.quebra{
+    width: 1000px;
+    justify-content: center;
+    display: inline-block;
+}
+
+.opcoes-atendimento {
+    padding-top: 60px;
+    justify-content: center;
+    display: flex;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.opcao {
+    
+    padding: 12px;
+    border-radius: 23px;
+    width: 330px;
+    height: 200px;
+    text-align: center;
+    border: 3px solid #3FB950;
+    
+}
+
+    .opcao h2 {
+        margin: 15px 0;
+        font-size: 21px;
+    }
+
+    .opcao p {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: white;
+    }
+    
+    
+    .opcao button {
+        background-color: #3FB950;
+        color: black;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 25px;
+        cursor: pointer;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 100;
+    }
+
+        .opcao button:hover {
+            background-color: #3FB950;
+        }
+
+.icone {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.opcao i {
+    font-size: 40px;
+    color: #3FB950;
+    margin-bottom: 10px;
+}
+.opcao a{
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+}
+
+
+.opcao>img{
+    margin-top: 10px;
+    width: 14%;
+    height: 43px;
+
+}
