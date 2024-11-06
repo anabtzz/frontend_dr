@@ -13,6 +13,8 @@ body {
     height: 100vh;
     background-color: #212121;
     font-family: "Montserrat", sans-serif;
+    flex-direction: column;
+    gap: 20px;
 }
 .voltar{
     font-family:"Montserrat", sans-serif;
@@ -45,7 +47,7 @@ body {
 .header {
     position: absolute;
     top: -40px;
-    right: 659px;
+    right: 660px;
     height: 80px;
     background-color: #ffffff;
     padding: 10px 30px;
