@@ -11,8 +11,41 @@
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
         </style>
         <title>Informações Pessoais</title>
-</head>
-<body>
+        <script>
+            function toggleMenu() {
+                const menu = document.getElementById('menu');
+                menu.classList.toggle('active');
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="img/logodr.png" alt="Logo"></a>
+                
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Busque por Nomes, Autores ou Categorias">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+            <div class="icons">
+                <i class="bi bi-bag"></i>
+                
+                <div class="menu-icon" onclick="toggleMenu()"><i class="fa fa-caret-down"></i></div>
+            </div>
+            <nav id="menu" class="nav-menu">
+                <h2>MENU</h2>
+                <ul>
+                    <li><a href="config.html">Conta</a></li>
+                    <li><a href="atendimento.html">Central de Atendimento</a></li>
+                </ul>
+                <div class="line"></div>
+                <div class="menu-buttons">
+                    <button class="btnlog"><a href="login.html">Login</a></button>
+                    <button class="btnreg"><a href="registro.html">Registre-se</a></button>
+                </div>
+            </nav>
+        </header>
 
     <div class="voltar">
         <a href="#"><i class="fas fa-chevron-left"></i> VOLTAR</a>

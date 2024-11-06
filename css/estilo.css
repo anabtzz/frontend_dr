@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    max-width: 100%;
+    max-width: 100%;    
 }
 
 body {
@@ -27,7 +27,7 @@ header {
 }
 .search button{
     background-color: rgba(0, 0, 0, 0);
-    border-radius: 30px;
+    border-radius: 50px;
     width: 50px;
     border: #3FB950 solid 3px;
     margin-left: 5px;
@@ -134,7 +134,7 @@ header {
     gap: 12px;
 }
 
-.login-btn {
+.btnlog {
     background-color: #3FB950;
     color: white;
     padding: 10px;
@@ -143,8 +143,11 @@ header {
     cursor: pointer;
     font-size: 22px;
 }
-
-.register-btn {
+.btnlog a{
+    text-decoration: none;
+    color: white;
+}
+.btnreg {
     background-color: #1F487E;
     color: white;
     padding: 10px;
@@ -152,6 +155,10 @@ header {
     border-radius: 5px;
     cursor: pointer;
     font-size: 22px;
+}
+.btnreg a{
+    text-decoration: none;
+    color: white;
 }
 .line{
     margin: 30px 0;
@@ -374,7 +381,7 @@ footer {
 
 .carouselL {
     display: flex;
-    gap: 20px;
+    gap: 40px;
     background-color: #2B2D42;
     border-radius: 30px;
     padding:30px 30px;
@@ -414,6 +421,7 @@ footer {
         font-family: "Montserrat", sans-serif;
         font-weight: 100;
         align-items: center;
+        
 }
 
 .destaque:hover{
