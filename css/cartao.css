@@ -39,23 +39,6 @@ header {
         transition: all 0.2s ease-in-out;
     }
     
-
-.gradiente1{
-    margin: 30px 0;
-    height: 2px;
-    background: black;
-    background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)), color-stop(50%, #3FB950));
-}
-.gradiente2{
-    margin: 30px 0;
-    height: 3px;
-    background: linear-gradient(to right, transparent, #3FB950, #1F487E, transparent);
-}
-.gradiente3{
-    margin: 30px 0;
-    height: 3px;
-    background: linear-gradient(to right, transparent, #1F487E,transparent);
-}
 .search {
     flex: 1;
     display: flex;
@@ -289,7 +272,7 @@ header {
 
 .delete {
     position: absolute;
-    right: 20px;
+    right: 17px;
     bottom: 24px;
     color: #ff4c4c;
     cursor: pointer;
@@ -314,4 +297,11 @@ header {
     .add-card:hover {
         background-color: #3FB950;
         color: #212121;
+    }
+
+    @media (max-width: 768px) {
+        .search, .search button {
+            display: none;
+    
+        }
     }

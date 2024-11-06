@@ -239,3 +239,11 @@ header {
     justify-content: center;
     display: center;
 }
+
+@media (max-width: 800px) {
+    
+    .search, .search button {
+    display: none;
+    
+}
+}

@@ -232,7 +232,6 @@ h2 {
     flex-wrap: nowrap; /* Mantém os cards em uma linha */
     width: 100%; /* Largura total */
     overflow-x: auto; /* Permite rolagem se os cards não couberem */
-    flex-wrap: wrap;
     text-decoration: none;
 }
 .cards a {
@@ -448,6 +447,11 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .search, .search button {
+        display: none;
+
+    }
+    
     .cards {
         flex-direction: column;
         gap: 10px;
