@@ -118,9 +118,9 @@ header {
     color: white;
     padding: 10px;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px;
     cursor: pointer;
-    font-size: 22px;
+    font-size: 20px;
 }
 .btnlog a{
     text-decoration: none;
@@ -131,9 +131,9 @@ header {
     color: white;
     padding: 10px;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px;
     cursor: pointer;
-    font-size: 22px;
+    font-size: 20px;
 }
 .btnreg a{
     text-decoration: none;
