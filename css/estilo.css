@@ -25,22 +25,9 @@ header {
     font-size: 30px;
     border-radius: -0px;
 }
-.search button{
-    background-color: rgba(0, 0, 0, 0);
-    border-radius: 50px;
-    width: 50px;
-    border: #3FB950 solid 3px;
-    margin-left: 5px;
-    color: #3FB950;
-    cursor: pointer;
-    
-} 
-.search button:hover{
-        box-shadow: #3fb94f1f 0px 0px 30px;
-        transition: all 0.2s ease-in-out;
-    }
-    
 
+    
+/* as divs linhas que estao pelo site*/
 .gradiente1{
     margin: 30px 0;
     height: 2px;
@@ -57,13 +44,28 @@ header {
     height: 3px;
     background: linear-gradient(to right, transparent, #1F487E,transparent);
 }
+
+/*barra de pesquisa e botao*/
 .search {
     flex: 1;
     display: flex;
     justify-content: center;
     position: relative;
 }
-
+.search button{
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 50px;
+    width: 50px;
+    border: #3FB950 solid 3px;
+    margin-left: 5px;
+    color: #3FB950;
+    cursor: pointer;
+    
+} 
+.search button:hover{
+        box-shadow: #3fb94f1f 0px 0px 30px;
+        transition: all 0.2s ease-in-out;
+    }
 .search input {
     padding: 18px;
     width: 45%;
@@ -73,6 +75,7 @@ header {
     font-size: 14px;
 }
 
+/*icons da nav como sacola e menu*/
 .icons {
     display: flex;
     align-items: center;
@@ -87,6 +90,7 @@ header {
     font-size: 25px;
 }
 
+/*parte do menu*/
 .nav-menu {
     display: none;
     background-color: #212121;
@@ -134,6 +138,7 @@ header {
     gap: 12px;
 }
 
+/*botoes de login e cadastro*/
 .btnlog {
     background-color: #3FB950;
     color: white;
@@ -177,29 +182,8 @@ h2 {
     text-align: center;
     font-weight: normal;
 }
-.btnp {
-    background-color: #1F487E;
-        color: black;
-        border: none;
-        margin-top: 10px;
-        padding: 10px 20px;
-        border-radius: 25px;
-        cursor: pointer;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 100;
-}
-.btnd {
-    background-color: #3FB950;
-    
-        color: black;
-        border: none;
-        margin-top: 10px;
-        padding: 10px 20px;
-        border-radius: 25px;
-        cursor: pointer;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 100;
-}
+
+
 .populares {
     display: flex;
     flex-direction: column;
@@ -225,6 +209,7 @@ h2 {
     border-radius: 10px;
 
 }
+/*cards do topo */
 .cards {
     display: flex;
     gap: 20px;
@@ -240,39 +225,11 @@ h2 {
     font-weight: bold;
     font-size: 18px;
 }
-.cardestaque {
-    display: flex;
-    gap: 40px;
-    font-size: 15px;
-}
+/*fim do cards do topo*/
 
-.cardsP h2 {
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 2px;
-    margin-top: 23px; /* Distância entre o título e os cards */
-}
-.cardP h2 {
-    color: white;
-    font-weight: bolder;
-    text-align: center;
-    margin-bottom: 2px;
-    margin-top: 23px; /* Distância entre o título e os cards */
-}
-.cardP {
 
-    text-align: center;
-    border-radius: 10px;
-    margin-top: -59px;
-}
 
-.cardP a {
-    text-decoration: none;
-    color:#1E1E1E;
-    font-weight: bold;
-    font-size: 18px;
-}
+
 .promocoes-container {
     display: flex;
     justify-content: center;
@@ -291,7 +248,7 @@ h2 {
     flex-direction: column;
     
 }
-
+/*arruma deixando o h2 centralizado */
 .ofertas h2 {
     color: white;
     font-weight: bold;
@@ -299,6 +256,49 @@ h2 {
     margin-bottom: 20%; 
 }
 
+/*cards da div de promoções*/
+.cardP {
+
+    text-align: center;
+    border-radius: 10px;
+    margin-top: -59px;
+}
+
+.cardP h2 {
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 2px;
+    margin-top: 23px; /* Distância entre o título e os cards */
+}
+
+.cardP a {
+    text-decoration: none;
+    color:#1E1E1E;
+    font-weight: bold;
+    font-size: 18px;
+}
+.btnp {
+    background-color: #1F487E;
+        color: black;
+        border: none;
+        margin-top: 10px;
+        padding: 10px 20px;
+        border-radius: 25px;
+        cursor: pointer;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 100;
+}
+/*fim do cards da div de promoções*/
+
+
+/*sessao para o card destaque e estilizando ele*/
+.cardestaque {
+    display: flex;
+    gap: 40px;
+    font-size: 15px;
+}
+/*estlizaçao em si do card destaque*/
 .destaque {
     display: flex;
     flex-direction: column;
@@ -310,6 +310,7 @@ h2 {
    /* box-shadow: #3fb94fa2 0px 0px 30px;*/
     margin-bottom: 40px;
 }
+/*arrumando o texto centralizando, trocando a cor e deixando em negrito*/
 .destaque h2 {
     color: white;
     font-weight: bold;
@@ -323,6 +324,7 @@ h2 {
     margin-top: 28px;
     font-size: 24px;
 }
+/*tirando a "linkagem" (barra que fica em baixo do texto) e estilizando*/
 .destaque a {
     text-decoration: none;
     color:#212121;
@@ -330,10 +332,23 @@ h2 {
     font-size: 18px;
 }
 
+.btnd {
+    background-color: #3FB950;
+    
+        color: black;
+        border: none;
+        margin-top: 10px;
+        padding: 10px 20px;
+        border-radius: 25px;
+        cursor: pointer;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 100;
+}
+/*deixando as imagens com cantos arrondados*/
 img {
     border-radius: 20px;
 }
-
+/*sessao de categoria e suas configs*/
 .grid-categorias {
     padding-top: 20px;
     justify-content: center;
@@ -346,6 +361,7 @@ img {
 .categorias h2 {
     margin-bottom: -6px;
 }
+/*arruma o cards da categoria ficando redondo que com uma borda */
 .categoria {
     padding: 10px;
     border-radius: 26px;
@@ -363,13 +379,15 @@ img {
     margin-top: 14px;
 }
 
-footer {
+/*footer nao configurado ent nao entra no site*/
+/* footer {
     padding: 20px;
     background: #333;
     text-align: center;
     justify-items: center;
-}
+} */
 
+/*config do carrossel com a estilizacao do mesmo */
 .carousel {
     display: flex;
     justify-content: center;
@@ -409,6 +427,7 @@ footer {
     margin-top: 23px; /* Distância entre o título e os cards */
 }
 
+/*estilização do btn do carrossel*/
 .btnc{
         background-color: #3FB950;
         color: black;
@@ -423,6 +442,11 @@ footer {
         
 }
 
+.carousel .card {
+    min-width: 200px;
+}
+
+/*hover dos botoes e do card destaque*/
 .destaque:hover{
     box-shadow: #3fb94fb2 0px 0px 30px;
     transition: all 0.2s ease-in-out;
@@ -440,10 +464,9 @@ footer {
 }
 
 
-.carousel .card {
-    min-width: 200px;
-}
 
+
+/*responsividade*/
 @media (max-width: 768px) {
     .search, .search button {
         display: none;

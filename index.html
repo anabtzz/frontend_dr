@@ -2,16 +2,21 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <!--link o css para o html-->
     <link rel="stylesheet" href="css/estilo.css">
+    <!--coloca o icon da dev reads no site-->
     <link rel="shortcut icon" type="imagex/png" href="img/logo.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--bootstrap lib para pegar icones necessarios para a montagem do site-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    
+    <!--fonte do google montserrat para os textos-->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
         </style>
     <title>DEVREADS</title>
-    
+    <!--um script para mostrar ao clicar no menu-->
     <script>
         function toggleMenu() {
             const menu = document.getElementById('menu');
@@ -20,27 +25,33 @@
     </script>
 </head>
 <body>
+    <!--cabeça do site aonde esta a nav-->
     <header>
+        <!--img da logo-->
         <div class="logo">
             <a href="index.html"><img src="img/logodr.png" alt="Logo"></a>
             
         </div>
+        <!--barra de pesquisa e botao-->
         <div class="search">
             <input type="text" placeholder="Busque por Nomes, Autores ou Categorias">
             <button type="submit"><i class="fa fa-search"></i></button>
         </div>
         <div class="icons">
             <i class="bi bi-bag"></i>
-            
+            <!-- chama o script para que receba a ação-->
             <div class="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-caret-down"></i></div>
         </div>
+        <!-- o que vai dentro do menu-->
         <nav id="menu" class="nav-menu">
             <h2>MENU</h2>
             <ul>
                 <li><a href="config.html">Conta</a></li>
                 <li><a href="atendimento.html">Central de Atendimento</a></li>
             </ul>
+            <!--linha estilizada-->
             <div class="line"></div>
+            <!-- botaos de login e registro-->
             <div class="menu-buttons">
                 <button class="btnlog"><a href="login.html">Login</a></button>
                 <button class="btnreg"><a href="registro.html">Registre-se</a></button>
@@ -49,12 +60,16 @@
     </header>
 
     <main>
+    <!--secao populares com os cards, nome e precos-->
         <section class="populares">
             <h2>POPULARES</h2>
-            <div class="cards"> <!-- Altere aqui para "cards" -->
+            
+            <div class="cards">
+                <!--uma classe chamada card para fazer a manipulação dos conteudos--> 
                 <div class="card"><br><br><img src="img/b.jpg">
                     <h2>NOME LIVRO</h2>
                     <p>R$ 00,00</p>
+                    <!--botao que vai direto pra apg de detalhes -->
                     <button class="btnp"><a href="detalheslivro.html">VER</button></a>
                 </div>
                 <div class="card"><br><br><img src="img/b.jpg">
@@ -75,11 +90,15 @@
             </div>
         </section>
 
+        <!--uma div linha que é so para estetica n é importante-->
         <div class="gradiente1"></div>
 
         <h2>PROMOÇÕES</h2>
-        
+
+        <!-- uma div que que contem os cards promo e do destaque-->
+         <!--precisa estar junto com as outras div da mesma parte para qe elas fiquem alinhadas-->
         <div class="promocoes-container">
+            <!--card destaque que tem um estilo diferente das outras por isso a div unica-->
             <div class="cardestaque">
                 <div class="destaque">
                     <h2>Livro da Semana</h2>
@@ -88,13 +107,15 @@
                     <span>R$ 00,00</span>
                     <button class="btnd"><a href="#">VER</button></a>
                 </div>
-    
+                <!--chama denovo o container pra que de continuidade nos outros cards-->
                 <div class="promocoes-container">
+                    <!--sessao de promo que tem uma estilização diferente da destque-->
                     <section class="promocoes">
                         <div class="ofertas">
                             <h2>Ofertas da Semana</h2>
                         </div>
-                
+
+                        <!-- nome cardestaque pra que a manipulação de conteudo seja feita-->
                         <div class="cardestaque">
                             <div class="cardP"><br><br><img src="img/b.jpg">
                                 <h2>NOME LIVRO</h2>
@@ -116,13 +137,13 @@
                         </div>
                     </section>
                 </div>
-        </div>
-    </main>
-    
-                        
             </div>
-        </section>
+        </main>
+    </div>
+
     <div class="gradiente2"></div>
+
+    <!--sessao especial para as categorias que ficam espalhadas igualmente na tela-->
         <section class="categorias">
             <h2>CATEGORIAS</h2>
             <div class="grid-categorias">
@@ -169,6 +190,7 @@
 
     <div class="gradiente3"></div>
 
+    <!--carrousel de livros que ainda nao esta funcionado (tem a mesma finalidade que a div promo)-->
     <div class="carousel">
             <div class="carouselL">
                 <div class="crul"><br><br><img src="img/b.jpg">
@@ -188,5 +210,5 @@
                 </div>
             </div>
         </div>
-    </body>
+    </body><!-- fecha o body para nao receber mais conteudo para o site-->
 </html>
