@@ -431,9 +431,7 @@ footer {
     box-shadow: #3fb94f7a 0px 0px 30px;
     transition: all 0.2s ease-in-out;
 }
-.btnc:hover{
-    background-color: #2B2D42;
-}
+
 .btnd:hover{
     border: #3FB950 solid 2px;
 }
