@@ -26,38 +26,27 @@
 </head>
 <body>
     <!--cabeça do site aonde esta a nav-->
-    <header>
+    <nav>
         <!--img da logo-->
         <div class="logo">
             <a href="index.html"><img src="img/logodr.png" alt="Logo"></a>
-            
         </div>
         <!--barra de pesquisa e botao-->
         <div class="search">
             <input type="text" placeholder="Busque por Nomes, Autores ou Categorias">
             <button type="submit"><i class="fa fa-search"></i></button>
         </div>
+        <!-- nao aparece se ele nao estiver logado-->
         <div class="icons">
-            <i class="bi bi-bag"></i>
-            <!-- chama o script para que receba a ação-->
-            <div class="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-caret-down"></i></div>
-        </div>
-        <!-- o que vai dentro do menu-->
-        <nav id="menu" class="nav-menu">
-            <h2>MENU</h2>
-            <ul>
-                <li><a href="config.html">Conta</a></li>
-                <li><a href="atendimento.html">Central de Atendimento</a></li>
-            </ul>
-            <!--linha estilizada-->
-            <div class="line"></div>
-            <!-- botaos de login e registro-->
-            <div class="menu-buttons">
-                <button class="btnlog"><a href="login.html">Login</a></button>
-                <button class="btnreg"><a href="registro.html">Registre-se</a></button>
+            <a href="carrinho.html"><i class="bi bi-bag"></i></a>
+            <a href="config.html"><i class="bi bi-person"></i></a>
+            </div>
+            <!-- nao aparece se ele estiver logado-->
+            <div class="btn">
+                <button href="login.html" class="login">Login</button>
+                <button href="registro.html" class="cadastro">Registre-se</button>
             </div>
         </nav>
-    </header>
 
     <main>
     <!--secao populares com os cards, nome e precos-->

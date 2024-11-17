@@ -26,8 +26,8 @@ header {
 
 .logo img{
     color: white;
-    font-size: 30px;
-    border-radius: -0px;
+    width: 80%;
+    margin-left: 20px;
 }
 
 /* barra e botao de pesquisa junto com o hover da mesma*/

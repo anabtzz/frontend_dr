@@ -2,17 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    max-width: 100%;    
+    max-width: 100%;
 }
 
 body {
     font-family: "Montserrat", sans-serif;
     background-color: #212121;
-    color: white;
-    line-height: 1.6;
+    color: #ffffff;
+    line-height: 1.6; 
+    display: flex;
+    flex-direction: column;
 }
-
-header {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,33 +25,6 @@ header {
     color: white;
     font-size: 30px;
     border-radius: -0px;
-}
-
-    
-/* as divs linhas que estao pelo site*/
-.gradiente1{
-    margin: 30px 0;
-    height: 2px;
-    background: black;
-    background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)), color-stop(50%, #3FB950));
-}
-.gradiente2{
-    margin: 30px 0;
-    height: 3px;
-    background: linear-gradient(to right, transparent, #3FB950, #1F487E, transparent);
-}
-.gradiente3{
-    margin: 30px 0;
-    height: 3px;
-    background: linear-gradient(to right, transparent, #1F487E,transparent);
-}
-
-/*barra de pesquisa e botao*/
-.search {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    position: relative;
 }
 .search button{
     background-color: rgba(0, 0, 0, 0);
@@ -66,6 +40,14 @@ header {
         box-shadow: #3fb94f1f 0px 0px 30px;
         transition: all 0.2s ease-in-out;
     }
+    
+.search {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
 .search input {
     padding: 18px;
     width: 45%;
@@ -75,7 +57,6 @@ header {
     font-size: 14px;
 }
 
-/*icons da nav como sacola e menu*/
 .icons {
     display: flex;
     align-items: center;
@@ -85,91 +66,45 @@ header {
 }
 
 
-.menu-icon {
+.icons {
     cursor: pointer;
     font-size: 25px;
 }
-
-/*parte do menu*/
-.nav-menu {
-    display: none;
-    background-color: #212121;
-    position: absolute;
-    border-radius: 20px;
-    top: 90px;
-    right: 0;
-    padding: 20px 20px;
-    box-shadow: rgba(0, 0, 0, 0.986) -10px 25px 60px;
-    
+.icons a {
+   text-decoration: none;
+   color: #fff;
 }
 
-.nav-menu.active {
-    display: block;
-    
-}
-
-.nav-menu h2 {
-    text-align: left;
-    color: white;
-    font-size: 20px;
-    margin-bottom: 20px;
-    font-weight: bolder;
-}
-
-.nav-menu ul {
-    list-style: none;
-    margin-bottom: 20px;
-}
-
-.nav-menu ul li {
-    margin-bottom: 15px;
-}
-
-.nav-menu ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-}
-
-.menu-buttons {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-/*botoes de login e cadastro*/
-.btnlog {
+.login {
+    padding: 10px 40px;
+    font-size: 15px;
+    border: none;
+    border-radius: 25px;
+    color: #ffffff;
     background-color: #3FB950;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
     cursor: pointer;
-    font-size: 20px;
 }
-.btnlog a{
-    text-decoration: none;
-    color: white;
+.login:hover {
+    transition: all 0.3s ease-in-out;
+    box-shadow: #3FB950 0px 0px 30px;
 }
-.btnreg {
+
+.cadastro {
+    padding: 10px 40px;
+    font-size: 15px;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
     background-color: #1F487E;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
     cursor: pointer;
-    font-size: 20px;
+    transition: 1s background;
 }
-.btnreg a{
-    text-decoration: none;
-    color: white;
-}
-.line{
-    margin: 30px 0;
-    height: 2px;
-    background: linear-gradient(to right, #1F487E, #3FB950, #1F487E,#3FB950 );;
-    
+
+.cadastro:hover {
+    transition: all 0.3s ease-in-out;
+    box-shadow: #1F487E 0px 0px 30px;
 }
 
 main {
