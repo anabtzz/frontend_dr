@@ -237,12 +237,17 @@ hr{
    list-style: none;
    }
 
+   .info2 h1{
+    font-size: 14px;
+    text-align: center ;
+} 
 .info2 h2{
     font-size: 14px;
+    text-align: center ;
 } 
 .info2 i{
     font-size: 18px;
-    padding-left: 20px;
+    padding-left: 18px;
 }
 
 @media (max-width: 768px) {

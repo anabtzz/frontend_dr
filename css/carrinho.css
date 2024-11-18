@@ -202,48 +202,6 @@ body > main {
 
   }
   
-  
-  .qty {
-
-    border: #3bc55b solid 2px;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    padding: 0 0;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    min-width: 30px;
-    border-radius: 20px;
-    overflow: hidden;
-    height: 30px;
-  }
-  
-  .qty span {
-    margin: 0 10px;
-  }
-  
-  .qty button {
-    color : #fff;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background: transparent;
-    border: 0;
-    padding: 0 10px;
-    font-size: 10px;
-    height: 100%;
-  }
-  
-  .qty button:hover {
-    background: #3bc55b;
-  }
-  
   .remove {
     background: transparent;
     border: #3bc55b solid 2px;
